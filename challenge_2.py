@@ -52,6 +52,7 @@ def process_rgb(rgb_data):
 
     return subset_rgb
 
+
 # TODO: show results
 print(process_rgb(input_rgb()))
 
