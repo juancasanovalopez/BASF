@@ -1,7 +1,5 @@
 # -------------------------------
-# BASF Digital Solutions GmbH
 # Date: 6th July 2022
-# Coding Challenge II
 # -------------------------------
 # Assume an array of arbitrary length whose elements represent colors of the set blue (b), green (g) or red (r).
 # Write an algorithm which returns the number of subsets in which the array can be split so that every subset
@@ -15,7 +13,6 @@
 # EX.3: Given the array r-b-g-g-b-r, the algorithm will     return 3
 # since array of length 6 itself features equal color representation. When splitting the array into two sections of
 # length three, two equal subsets can be identified: r-b-g and g-b-r.
-# 1
 # -------------------------------
 # inputs: r-g-b array of arbitrary length
 # outputs: number of r-g-b subsets found
