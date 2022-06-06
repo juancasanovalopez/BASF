@@ -26,15 +26,14 @@
 # Get an array only with rgb data.
 # Help user to input correct data.
 def input_rgb():
-    allow_input = 0
-    while (allow_input==0):
+    allow_input = False
+    while not allow_input:
         allowed_values = ['r','g','b']
         rgb_data = input("Enter rgb data: ")
         for x in rgb_data:
-            if x not in allowed_values:
-                allow_input=0
-                print("Please input only r-g-b values (ex: rrggbb).")
-            else: allow_input = 1
+            if x not in allowed_values: allow_input = False
+            else: allow_input = True
+        print("Please input only r-g-b values (ex: rrggbb).")
     return rgb_data
 
 # TODO: data process function
@@ -54,11 +53,7 @@ def process_rgb(rgb_data):
     return subset_rgb
 
 # TODO: show results
-print(
-    process_rgb(
-        input_rgb()
-    )
-)
+print(process_rgb(input_rgb()))
 
 
 
