@@ -39,13 +39,15 @@ def input_rgb():
 def process_rgb(rgb_data):
     subset_rgb = [0, 0, 0]
     for x in rgb_data:
-        print(x)
         if x == 'r':
             subset_rgb[0] += 1
         if x == 'g':
             subset_rgb[1] += 1
         if x == 'b':
             subset_rgb[2] += 1
+
+    # de los 3 numeros que componen el subset buscar el menor y dividir el resto entre este, para obtener el numnero de
+    # subsets
 
     return subset_rgb
 
