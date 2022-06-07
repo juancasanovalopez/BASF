@@ -18,7 +18,6 @@
 # outputs: number of r-g-b subsets found
 # -------------------------------
 
-# TODO: input function
 # INPUT FUNCTION
 # Get an array only with rgb data.
 # Help user to input correct data.
@@ -49,13 +48,11 @@ def process_rgb(rgb_data):
         if color == 'b':
             subset_rgb[2] += 1
 
-    n = len(subset_rgb)
-    for i in range(0,n):
-
-
-    return subset_rgb
+    print("The number of subsets is: ")
+    return min(subset_rgb)
 
 # TODO: show results
+
 print(process_rgb(input_rgb()))
 
 
