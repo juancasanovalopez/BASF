@@ -30,7 +30,10 @@ def input_rgb():
         for x in rgb_data:
             if x not in allowed_values: allow_input = False
             else: allow_input = True
-        print("Please input only r-g-b values (ex: rrggbb).")
+
+        if allow_input == False:
+            print("Please input only r-g-b values (ex: rrggbb).")
+
     return rgb_data
 
 # TODO: data process function
@@ -38,19 +41,19 @@ def input_rgb():
 # get rgb data and calculate the number of r-g-b subsets
 def process_rgb(rgb_data):
     subset_rgb = [0, 0, 0]
-    for x in rgb_data:
-        if x == 'r':
+    for color in rgb_data:
+        if color == 'r':
             subset_rgb[0] += 1
-        if x == 'g':
+        if color == 'g':
             subset_rgb[1] += 1
-        if x == 'b':
+        if color == 'b':
             subset_rgb[2] += 1
 
-    # de los 3 numeros que componen el subset buscar el menor y dividir el resto entre este, para obtener el numnero de
-    # subsets
+    n = len(subset_rgb)
+    for i in range(0,n):
+
 
     return subset_rgb
-
 
 # TODO: show results
 print(process_rgb(input_rgb()))

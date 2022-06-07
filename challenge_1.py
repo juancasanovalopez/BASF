@@ -12,27 +12,27 @@
 # outputs: longest ordered array which all arrays share
 # -------------------------------
 
-# TODO: input function
-def get_input():
-    # Obtain the data from user
-    print("Please enter array data (spacebar will separate strings):")
-    words = list(input("Enter variables: ").split())
-    # process the data
-    n = 0
-    # separate words
-    for word in words:
-        print(words[n])
-        # separe characters (named letter, as char is a reserved word)
-        for letter in word:
-            print(letter)
-        # compare letter and store when a coincidence occurs
-
-        n+1
-    # show result
-
+# INPUT FUNCTION
+# Obtain n=3 ordered array of arbitrary length
+# Containing only capital letters
+def read_input_strings(n):
+    strings = []
+    for i in range(0,n):
+        string = (input("Please enter array data, hit enter when finished: ")).upper()
+        strings.append(string)
+    return strings
 
 # TODO: data process function
+# get 1st element from 1st string and compare with 1st element of 2nd string
+# get 1st element from 1st string and compare with 2nd element of 2nd string
+# if they are equal then store element in temporary array
+def process_(strings):
+    n = len(strings)
+    for j in range(0,n):
+
+        for string in strings:
+            print(list(string))
+
 # TODO: show results
-if __name__ == '__main__':
-    get_input()
+process_(read_input_strings(3))
 
